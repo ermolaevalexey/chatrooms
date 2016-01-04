@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+body {
+	margin: 0;
+	padding: 50px;
+	font-size: 1em;
+	font-weight: normal;
+	font-family: "Open Sans", sans-serif;
+}
+
+a {
+	color: #00b7ff;
+}
+
+code {
+	font-family: 'Inconsolata';
+}
+
+.content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.room {
+	background-color: #ddd;
+	margin-bottom: 1em;
+}
+
+.room-list {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+	height: 300px;
+	overflow: auto;
+}
+
+.room-list div {
+	border-bottom: 1px solid #eee;
+}
+
+.room-list div:hover {
+	background-color: #ddd;
+}
+
+.send-message {
+	width: 70%;
+	margin-bottom: 1em;
+	margin-right: 1em;
+}
+
+.messages {
+	width: 70%;
+	height: 300px;
+	overflow: auto;
+	background-color: #eee;
+	margin-bottom: 1em;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: top;
+}

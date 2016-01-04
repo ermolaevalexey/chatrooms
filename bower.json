@@ -1,0 +1,8 @@
+{
+  "name": "chatrooms",
+  "version": "0.0.1",
+  "description": "Minimalist multiroom chat server",
+  "devDependencies": {
+    "jquery": "1.11.3"
+  }
+}
