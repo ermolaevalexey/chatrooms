@@ -1,8 +1,10 @@
-var http  = require('http')
-  , fs    = require('fs')
-  , path  = require('path')
-  , mime  = require('mime')
-  , cache = {};
+var http  = require('http'),
+	fs    = require('fs'),
+    path  = require('path'),
+  	mime  = require('mime'),
+    cache = {},
+  	server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080,
+  	server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 
 function send404(response) {
   response.writeHead(404, {'Content-Type': 'text/plain'});
@@ -50,8 +52,8 @@ var server = http.createServer(function(request, response) {
   serveStatic(response, cache, absPath);
 });
 
-server.listen(3000, function() {
-  console.log("Server listening on port 3000.");
+server.listen(server_port, function() {
+  console.log("Server listening on port"+ server_port + ".");
 });
 
 var chatServer = require('./lib/chat_server');
