@@ -4,7 +4,7 @@ var http  = require('http'),
   	mime  = require('mime'),
     cache = {},
   	server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080,
-  	server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+  	server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '52.2.175.78';
 
 function send404(response) {
   response.writeHead(404, {'Content-Type': 'text/plain'});
